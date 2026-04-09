@@ -1,23 +1,29 @@
-# 🌦 Weather API (Cloud Run Ready)
+# Weather API (Cloud Run Ready)
+
+<p align="center">
+  <video src="assets/GDG%20on%20Campus%20Makerere%20University.mp4" controls muted playsinline width="100%"></video>
+</p>
+
+> This project was showcased during a Build with AI session for GDG on Campus Makerere University.
 
 A **production-ready Weather API** built with Node.js, secured with API keys, documented using Swagger, and deployable to Google Cloud Run with CI/CD.
 
 ---
 
-## 🚀 Features
+## Features
 
-* 🌦 Fetch real-time weather by city
-* 🔐 API Key Authentication
-* 📄 Swagger API Documentation (`/docs`)
-* ⚡ Rate limiting & security middleware
-* ☁️ Cloud Run deployment ready
-* 🔁 Fallback mechanism (mock data if external API fails)
+* Fetch real-time weather by city
+* API Key Authentication
+* Swagger API Documentation (`/docs`)
+* Rate limiting & security middleware
+* Cloud Run deployment ready
+* Fallback mechanism (mock data if external API fails)
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
-```
+```bash
 weather-api/
 │── src/
 │   ├── app.js
@@ -39,7 +45,7 @@ weather-api/
 
 ---
 
-## ⚙️ Local Setup
+## Local Setup
 
 ### 1. Clone Repository
 
@@ -62,7 +68,7 @@ cp .env.example .env
 
 Update `.env`:
 
-```
+```bash
 PORT=8080
 WEATHER_API_KEY=your_openweather_api_key
 BASE_URL=https://api.openweathermap.org/data/2.5
@@ -86,9 +92,9 @@ http://localhost:8080
 
 ---
 
-## 🌐 API Endpoints
+## API Endpoints
 
-### 🔹 Health / Landing Page
+### Health / Landing Page
 
 ```
 GET /
@@ -96,7 +102,7 @@ GET /
 
 ---
 
-### 🔹 Get Weather by City
+### Get Weather by City
 
 ```
 GET /api/weather?city=Kampala
@@ -104,7 +110,7 @@ GET /api/weather?city=Kampala
 
 ---
 
-## 🔐 Authentication
+## Authentication
 
 All protected endpoints require:
 
@@ -115,7 +121,7 @@ x-api-key: your_internal_api_key
 
 ---
 
-## 📄 API Documentation (Swagger)
+## API Documentation (Swagger)
 
 Open:
 
@@ -129,7 +135,7 @@ http://localhost:8080/docs
 
 ---
 
-## 🧪 Example Request
+## Example Request
 
 ```bash
 curl -X GET "http://localhost:8080/api/weather?city=Kampala" \
@@ -138,7 +144,7 @@ curl -X GET "http://localhost:8080/api/weather?city=Kampala" \
 
 ---
 
-## 🔁 Fallback Behavior
+## Fallback Behavior
 
 If the external weather API fails or no API key is provided:
 
@@ -152,7 +158,7 @@ If the external weather API fails or no API key is provided:
 
 ---
 
-## ☁️ Deploy to Cloud Run (via GitHub)
+## Deploy to Cloud Run (via GitHub)
 
 This project supports **continuous deployment from GitHub using Cloud Build**.
 
@@ -217,7 +223,7 @@ https://your-cloud-run-url/docs
 
 ---
 
-## 🔄 Continuous Deployment
+## Continuous Deployment
 
 Every push to `main` branch:
 
@@ -227,14 +233,14 @@ git commit -m "update"
 git push
 ```
 
-👉 Automatically triggers:
+Automatically triggers:
 
 * Cloud Build
 * New deployment on Cloud Run
 
 ---
 
-## 🔐 Security Best Practices
+## Security Best Practices
 
 * Never commit `.env`
 * Use environment variables in production
@@ -243,7 +249,7 @@ git push
 
 ---
 
-## 🧠 Tech Stack
+## Tech Stack
 
 * Node.js + Express
 * Axios (HTTP client)
@@ -253,7 +259,7 @@ git push
 
 ---
 
-## 🎤 Key Talking Points
+## Key Talking Points
 
 * “We built a production-ready API, not just a demo.”
 * “It’s secured, documented, and cloud-deployed.”
@@ -262,13 +268,13 @@ git push
 
 ---
 
-## 📌 License
+## License
 
 MIT License
 
 ---
 
-## ✨ Author
+## Author
 
 **Pius Kevin Mafabi**
 Software Engineer & Google Developer Expert
